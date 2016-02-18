@@ -1,0 +1,35 @@
+/*
+本文件为data格式说明文件：
+第一行：totalNode,表示路网总共的节点数目
+接下来有totalNode段，	
+	每一行的格式如下：
+	vertex,longitude,latitude,adjvexNum,adjvex1,distance1,grade1,nextVertexNum1,turnDelay1,turnDelay2,...,turnDelay(nextVertexNum)
+	其中：
+	vertex:表头节点；
+	longitude:表头节点经度；
+	latitude:表头节点纬度；
+	adjvexNum:表头节点的邻接节点的个数；
+	adjvex(i):邻接节点；
+	distance(i):表头节点和其邻接节点间路段的路阻；
+	grade(i):表头节点和其邻接节点间路段的道路等级；
+	nextVertexNum(i):邻接节点后继节点的个数；
+	turnDelay1,turnDelay2,...,turnDelay(j)....:转向延误；
+结束。
+
+
+
+
+本文件为cost and delay data变化格式说明文件：
+第一行：totalNode,表示路网总共的节点数目
+接下来有totalNode段，	
+	每一行的格式如下：
+	vertex,longitude,latitude,adjvexNum,adjvex1,distance1,grade1,nextVertexNum1,turnDelay1,turnDelay2,...,turnDelay(nextVertexNum)
+	其中：
+	vertex:表头节点；
+	adjvexNum:表头节点的邻接节点的个数；
+	adjvex(i):邻接节点；
+	distance(i):表头节点和其邻接节点间路段的路阻变化率；
+	nextVertexNum(i):邻接节点后继节点的个数；
+	turnDelay1,turnDelay2,...,turnDelay(j)....:转向延误变化率；
+结束。
+*/

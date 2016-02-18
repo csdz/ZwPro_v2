@@ -1,0 +1,15 @@
+/*
+本文件为data格式说明文件：
+第一行：totalNode,表示路网总共的节点数目
+接下来有totalNode段，	
+	每一行的格式如下：
+	vertex,adjvexNum,adjvex1,distance1,nextVertexNum1,turnDelay1,turnDelay2,...,turnDelay(nextVertexNum),adjvex2,...,adjvex(adjvexNum)
+	其中：
+	vertex:表头节点；
+	adjvexNum:表头节点的邻接节点的个数；
+	adjvex(i):邻接节点；
+	distance(i):节点和其邻接节点间路段的路阻变化率y，变化率为正，表示路阻增加（路阻变为：lz*(1+y)），反之减少；
+	nextVertexNum(i):邻接节点后继节点的个数；
+	turnDelay1,turnDelay2,...,turnDelay(j)....:转向延误的变化率，变化率为正，表示转向延误增加，反之减少；
+结束。
+*/
